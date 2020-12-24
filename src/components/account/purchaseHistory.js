@@ -1,11 +1,15 @@
 import React, { Component } from "react";
 
+import PageTitle from "../pageTitle";
+
 class PurchaseHistory extends Component {
   render() {
     return (
-      <div>
-        <h1>Purchase</h1>
-        <h3>History</h3>
+      <div className="purchase-history">
+        <PageTitle
+          className="purchase-history__page-title"
+          title="Purchase History"
+        />
       </div>
     );
   }
