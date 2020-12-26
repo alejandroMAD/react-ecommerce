@@ -11,17 +11,17 @@ const INITIAL_STATE = {
 
 export default function (state = INITIAL_STATE, action) {
   switch (action.type) {
-    case SET_HEADER_LINKS:
+    case "SET_HEADER_LINKS":
       return {
         ...state,
         headerLinks: action.payload
       };
-    case SET_NAVBAR_LINKS:
+    case "SET_NAVBAR_LINKS":
       return {
         ...state,
         navbarLinks: action.payload
       };
-    case CHANGE_NAVBAR_ACTIVE:
+    case "CHANGE_NAVBAR_ACTIVE":
       const navbarLinks = state.navbarLinks.map((link) => {
         link.active = false;
         if (link._id == action.payload) {
