@@ -38,6 +38,7 @@
   &__shipping-address {
     grid-column: s/m;
     grid-row: m-e/e;
+    white-space: pre-wrap;
   }
   &__total {
     grid-column: m/e;
