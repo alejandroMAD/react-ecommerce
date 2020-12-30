@@ -19,13 +19,13 @@
     grid-column: s/e;
     height: 675px;
     width: 520px;
-    background-color: #333;
+    background-color: $dark-gray;
     box-shadow: -3px 20px 20px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
 .cart-button {
-  background-color: #333;
+  background-color: $dark-gray;
   color: white;
   font-size: 28px;
   border-radius: 25px 0 0 25px;
@@ -38,7 +38,7 @@
     font-weight: 600;
     font-size: 30px;
     font-family: "Titillium Web";
-    color: #e6e6e6;
+    color: $light-gray;
   }
 
   &__products {
@@ -47,5 +47,35 @@
 
   &__footer {
     display: grid;
+  }
+}
+
+.cart-footer {
+  &__checkout {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 38px;
+    width: 183px;
+    border-radius: 20px;
+    background-color: $brand-green;
+
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+
+    transition: all 0.3s ease;
+
+    &:hover {
+      transform: scale(0.97);
+    }
+
+    &:active {
+      transform: scale(0.95);
+    }
+
+    &:focus {
+      outline: none;
+    }
   }
 }

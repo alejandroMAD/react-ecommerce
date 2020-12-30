@@ -84,7 +84,7 @@
   &__line {
     grid-row: line-s/line-e;
     grid-column: s/e;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid $gray-border;
     margin-bottom: 24px;
   }
 

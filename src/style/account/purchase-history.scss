@@ -6,7 +6,7 @@
   }
 
   &__page-title {
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid $gray-border;
   }
 
   &__border-bottom {
@@ -61,7 +61,7 @@
   &__print-receipt {
     width: 150px;
     justify-self: center;
-    color: #00cb79;
+    color: $brand-green;
     font-size: 14px;
     font-weight: 600;
     text-decoration: underline;

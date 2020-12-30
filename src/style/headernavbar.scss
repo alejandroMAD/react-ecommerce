@@ -19,7 +19,7 @@
     display: grid;
     grid-template-rows: [s] 1fr [e];
     column-gap: 47px;
-    color: #333;
+    color: $dark-gray;
     font-size: 16px;
 
     & > * {
@@ -31,13 +31,13 @@
 }
 
 .green-text {
-  color: #00cb79 !important;
+  color: $brand-green !important;
 }
 
 .navbar {
   grid-row: navbar-s/navbar-e;
   grid-column: 1/-1;
-  background-color: #333;
+  background-color: $dark-gray;
   box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
 
   display: grid;
@@ -45,7 +45,7 @@
   align-items: center;
   justify-content: center;
   column-gap: 40px;
-  color: #e6e6e6;
+  color: $light-gray;
   font-size: 18px;
   font-weight: normal;
 
