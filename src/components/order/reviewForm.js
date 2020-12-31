@@ -1,8 +1,9 @@
 import React, { Component } from "react";
+
+// REDUX
 import { reduxForm, Field } from "redux-form";
 
 import history from "../../history";
-
 import { FormButton } from "../formFields";
 import ReviewProducts from "./reviewProducts";
 

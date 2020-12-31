@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+
+// REDUX
 import { connect } from "react-redux";
 
 import ReviewProduct from "./reviewProduct";

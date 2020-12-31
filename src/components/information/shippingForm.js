@@ -10,6 +10,7 @@ import OrderSummary from "./orderSummary";
 class ShippingForm extends Component {
   render() {
     const { className, handleSubmit } = this.props;
+
     return (
       <form onSubmit={handleSubmit} className={`${className} shipping-form`}>
         <Field
@@ -25,7 +26,7 @@ class ShippingForm extends Component {
           type="address"
           title="Street Address"
           placeholder="Street Address"
-          name="addres"
+          name="address"
           component={FormInput}
         />
         <Field
@@ -64,14 +65,14 @@ class ShippingForm extends Component {
         />
         <Field
           className="shipping-form__back"
-          onClick={() => history.push("")}
+          onClick={() => history.push("/signin")}
           type="button"
           title="Back"
           name="back"
           short={true}
           component={FormButton}
         />
-        <OrderSummary className="shipping-form__summary" />
+        <OrderSummary className="shipping-form__order-summary" />
       </form>
     );
   }

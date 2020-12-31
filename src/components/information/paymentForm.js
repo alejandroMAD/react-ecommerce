@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+
+// REDUX
 import { reduxForm, Field } from "redux-form";
 
 import { FormInput, FormButton } from "../formFields";

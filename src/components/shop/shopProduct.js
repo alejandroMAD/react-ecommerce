@@ -1,9 +1,11 @@
 import React, { Component } from "react";
-import Quantity from "../quantity";
-import GreenPriceTag from "../greenPriceTag";
 
+// REDUX
 import * as actions from "../../actions";
 import { connect } from "react-redux";
+
+import Quantity from "../quantity";
+import GreenPriceTag from "../greenPriceTag";
 
 class ShopProduct extends Component {
   handleAddToCart = () => {

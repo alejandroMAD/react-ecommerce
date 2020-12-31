@@ -1,7 +1,9 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 
+// REDUX
+import { connect } from "react-redux";
 import * as actions from "../../actions";
+
 import CartProduct from "./cartProduct";
 import CartButton from "./cartButton";
 import history from "../../history";

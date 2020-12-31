@@ -1,5 +1,8 @@
 import React, { Component } from "react";
+
+// REDUX
 import { connect } from "react-redux";
+
 import history from "../../history";
 
 class Header extends Component {
