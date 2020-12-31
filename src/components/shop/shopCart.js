@@ -36,7 +36,9 @@ function CartFooter({ className, products }) {
         Checkout
       </a>
       <div className="cart-footer__subtotal">Subtotal</div>
-      <div className="cart-footer__price">${subtotal}</div>
+      <div className="cart-footer__price">
+        ${parseFloat(subtotal.toFixed(2))}
+      </div>
     </div>
   );
 }

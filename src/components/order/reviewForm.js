@@ -41,7 +41,9 @@ class ReviewForm extends Component {
         <div className="review-form__details review-details">
           <div className="review-details__subtotal review-detail">
             <div className="review-detail__title">Subtotal</div>
-            <div className="review-detail__price">{subtotal}</div>
+            <div className="review-detail__price">
+              {parseFloat(subtotal.toFixed(2))}
+            </div>
           </div>
           <div className="review-details__subtotal review-detail">
             <div className="review-detail__title">Tax</div>
@@ -56,7 +58,7 @@ class ReviewForm extends Component {
               Total
             </div>
             <div className="review-detail__price review-detail-green__price">
-              {subtotal + tax}
+              {parseFloat(subtotal.toFixed(2)) + tax}
             </div>
           </div>
         </div>

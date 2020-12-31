@@ -24,7 +24,7 @@ class OrderSummary extends Component {
         <InfoTitle
           className="order-summary__subtotal"
           title={`${amtStickers} stickers`}
-          value={`$${subtotal}`}
+          value={`$${parseFloat(subtotal.toFixed(2))}`}
         />
         <InfoTitle
           className="order-summary__tax-shipping"
@@ -34,7 +34,7 @@ class OrderSummary extends Component {
         <InfoTitle
           className="order-summary__total info-title-green"
           title="Total"
-          value={`$${subtotal + tax}`}
+          value={`$${parseFloat(subtotal.toFixed(2)) + tax}`}
         />
       </div>
     );
