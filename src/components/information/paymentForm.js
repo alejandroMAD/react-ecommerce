@@ -2,26 +2,11 @@ import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
 
 import { FormInput, FormButton } from "../formFields";
-import Details from "../details";
 import history from "../../history";
 
-class SignUpForm extends Component {
+class PaymentForm extends Component {
   render() {
     const { className, handleSubmit } = this.props;
-    const info = [
-      {
-        _id: 0,
-        title: "At least 6 characters"
-      },
-      {
-        _id: 1,
-        title: "At least one number"
-      },
-      {
-        _id: 2,
-        title: "At least one symbol"
-      }
-    ];
     return (
       <form onSubmit={handleSubmit} className={`${className} sign-up-form`}>
         <Field
@@ -75,18 +60,13 @@ class SignUpForm extends Component {
           short={true}
           component={FormButton}
         />
-        <Details
-          className="sign-up-form__details"
-          title="Password Requirements"
-          info={info}
-        />
       </form>
     );
   }
 }
 
-SignUpForm = reduxForm({
-  form: "SignUpForm"
-})(SignUpForm);
+PaymentForm = reduxForm({
+  form: "PaymentForm"
+})(PaymentForm);
 
-export default SignUpForm;
+export default PaymentForm;
