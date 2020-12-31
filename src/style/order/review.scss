@@ -5,7 +5,8 @@
   &__form {
     display: grid;
     grid-template-rows:
-      [line-s] 26px
+      [products-s] 400px
+      [products-e line-s] 26px
       [line-e buttons-s] 38px
       [buttons-e];
     grid-template-columns:
