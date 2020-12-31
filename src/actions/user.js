@@ -1,13 +1,21 @@
 import {
   SET_USER_PURCHASES,
   SET_PURCHASE_DETAIL,
-  SET_CART_PRODUCTS
+  SET_CART_PRODUCTS,
+  ADD_CART_PRODUCT
 } from "./types";
 
 export function setPurchaseDetail(_id) {
   return {
     type: SET_PURCHASE_DETAIL,
     payload: _id
+  };
+}
+
+export function addCartProduct(product) {
+  return {
+    type: ADD_CART_PRODUCT,
+    payload: product
   };
 }
 
@@ -34,7 +42,7 @@ export function fetchCartProducts() {
           title: "Graph Database",
           description:
             "The FitnessGram™ Pacer Test is a multistage aerobic capacity test that progressively gets more difficult as it continues. The 20 meter pacer test will begin in 30 seconds. ... The running speed starts slowly, but gets faster each minute after you hear this signal.",
-          price: 3.99,
+          price: 1.99,
           belongsTo: [0, 6]
         },
         quantity: 1
@@ -50,89 +58,89 @@ export function fetchUserPurchases() {
       {
         _id: 0,
         total: 19.4,
-        orderNumber: "A0045600423",
+        orderNumber: "A0048248343",
         orderDate: new Date().toDateString(),
-        creditCard: "-8464",
+        creditCard: "-0000",
         user: {
-          name: "Iker Casillas",
+          name: "Jordan Hudgens",
           shippingAddress: "1234 West State Street"
         }
       },
       {
         _id: 1,
-        total: 20.05,
-        orderNumber: "A5499902221",
+        total: 1.3,
+        orderNumber: "24343sdfkjh72",
         orderDate: new Date().toDateString(),
-        creditCard: "-2961",
+        creditCard: "-0000",
         user: {
-          name: "Sergio Ramos",
-          shippingAddress: "4567 East State Avenue"
+          name: "Maxwell Nelson",
+          shippingAddress: "1337 West State Street"
         }
       },
       {
         _id: 2,
-        total: 9.35,
-        orderNumber: "A0580828863",
+        total: 1.3,
+        orderNumber: "B0048248343",
         orderDate: new Date().toDateString(),
-        creditCard: "-6839",
+        creditCard: "-0000",
         user: {
-          name: "Gerard Piqué",
-          shippingAddress: "8910 South Drive"
+          name: "Jordan Hudgens",
+          shippingAddress: "1234 West State Street"
         }
       },
       {
         _id: 3,
-        total: 11.5,
-        orderNumber: "A0000046584",
+        total: 16.4,
+        orderNumber: "ADFasdlfkjwe",
         orderDate: new Date().toDateString(),
-        creditCard: "-2430",
+        creditCard: "-0000",
         user: {
-          name: "Carles Puyol",
-          shippingAddress: "1112 North Boulevard"
+          name: "Max Asher Nelson",
+          shippingAddress: "1234 West State Street"
         }
       },
       {
         _id: 4,
-        total: 45.65,
-        orderNumber: "A0044575423",
+        total: 19.4,
+        orderNumber: "A0048248343",
         orderDate: new Date().toDateString(),
-        creditCard: "-0719",
+        creditCard: "-0000",
         user: {
-          name: "Andrés Iniesta",
-          shippingAddress: "1314 Blue Hill Street"
+          name: "Jordan Hudgens",
+          shippingAddress: "1234 West State Street"
         }
       },
       {
         _id: 5,
-        total: 3.4,
-        orderNumber: "A0011514411",
+        total: 19.4,
+        orderNumber: "A0048248343",
         orderDate: new Date().toDateString(),
-        creditCard: "-8645",
+        creditCard: "-0000",
         user: {
-          name: "Sergio Busquets",
-          shippingAddress: "742 Evergreen Terrace "
+          name: "Jordan Hudgens",
+          shippingAddress: "1234 West State Street"
         }
       },
       {
         _id: 6,
-        total: 2.3,
-        orderNumber: "A0045355423",
+        total: 19.4,
+        orderNumber: "A0048248343",
         orderDate: new Date().toDateString(),
-        creditCard: "-3337",
+        creditCard: "-0000",
         user: {
-          name: "Xabi Hernández",
-          shippingAddress: "221B Baker Street"
+          name: "Jordan Hudgens",
+          shippingAddress: "1234 West State Street"
         }
       },
       {
         _id: 7,
-        total: 39,
-        orderNumber: "A0042200420",
+        total: 3.2,
+        orderNumber: "5UFISHDFJASUSHI298",
         orderDate: new Date().toDateString(),
-        creditCard: "-0716",
+        creditCard: "-0000",
         user: {
-          name: "David Villa",
-          shippingAddress: "2324 Moonwalk Park"
+          name: "Andrew Wold",
+          shippingAddress: "348 Yo State Street"
         }
       }
     ]
